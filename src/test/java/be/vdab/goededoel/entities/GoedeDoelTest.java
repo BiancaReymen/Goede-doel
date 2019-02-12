@@ -24,6 +24,6 @@ public class GoedeDoelTest {
 	}
 	@Test
 	public void eenNieuwDoelHeeftNogNietsOpgebracht() {
-		assertEquals(1, doel.getOpgebracht().compareTo(BigDecimal.ZERO));
+		assertEquals(0, doel.getOpgebracht().compareTo(BigDecimal.ZERO));
 	}
 }
