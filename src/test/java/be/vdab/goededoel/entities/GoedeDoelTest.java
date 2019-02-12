@@ -38,4 +38,8 @@ public class GoedeDoelTest {
 	public void goedeDoelenMetVerschillendeNaamMoetenVolgensEqualsVerschillendZijn() {
 		assertNotEquals(new GoedeDoel("Unicef"), doel);
 	}
+	@Test
+	public void goedDoelVerschiltVanEenObjectMetEenAnderType() {
+		assertNotEquals(doel, BigDecimal.ZERO);
+	}
 }
